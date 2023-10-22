@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    padding: 0 20px;
+}
+
+.logo {
+    margin: 0;
+}
+
+header .login {
+    margin: 0;
+    display: none;
+}
+
+
+.main-img {
+    display: none;
+    margin: 0;
+}
+
+.register {
+    margin: 0;
+}
+
+@media (min-width: 0px) {
+    .header {
+        padding-top: 32px;
+    }
+    .register {
+        margin-top: 60px;
+    }
+
+    .register-info {
+        margin-bottom: 40px;
+    }
+
+    .register-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 8px;
+    }
+
+    .register-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form input {
+        margin-bottom: 24px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px 0;
+        padding-left: 14px;
+        border-radius: 8px;
+        border: 1px solid #919EAB4D;
+
+    }
+
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: #919EAB4D;
+     }
+
+    .btn {
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        padding: 11px 0;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        color: white;
+        background-color: #3258FB;
+    }
+
+    .btn:hover {
+        background-color: #4c6cfc;
+    }
+
+    .form-text {
+        font-family: Public Sans, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+
+        color: gray;
+    }
+
+    .form-text a {
+        color: #3258FB;
+    }
+
+    .login {
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 32px 0;
+    }
+
+    .login a {
+        font-family: Public Sans, sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+
+        color: #3258FB;
+    }
+}
+
+@media (min-width: 670px) {
+    .name-surname input{
+        width: 49%;
+    }
+    .name-surname {
+        display: flex;
+    }
+
+    .register {
+        width: 520px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .register {
+        width: 480px;
+    }
+
+    footer > .login {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .header > .login {
+        display: block;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        gap: 20%  ;
+    }
+
+    .main-img {
+        display: block;
+    }
+    
+    .name-surname {
+        flex-direction: column;
+    }
+
+    .name-surname input{
+        width: 100%;
+    }
+
+}
+
